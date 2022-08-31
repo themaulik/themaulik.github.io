@@ -34,6 +34,34 @@
     --font-semi-bold: 600;
 
     /* ---------------> Margenes Bottom <--------------- */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 
-    
+    /* ---------------> z index <--------------- */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-model: 1000;
 }
+
+/* --------------- Font Size For Larger Device --------------- */
+@media screen and (min-width: 980px){
+    :root{
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/* --------------- VARIABLES Dark Theme --------------- */
+
+/* --------------- Button Dark/Light --------------- */
