@@ -310,71 +310,209 @@ img {
 .home_scroll-mouse {
     font-size: 2rem;
 }
-.home_scroll-name{
+
+.home_scroll-name {
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
 }
-.home_scroll-arrow{
+
+.home_scroll-arrow {
     font-size: 1.25rem;
 }
+
 /*==================== BUTTONS ====================*/
-.button{
+.button {
     display: inline-block;
     background-color: var(--first-color);
     color: #fff;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 48px;
     font-weight: var(--font-medium);
 }
-.button:hover{
+
+.button:hover {
     background-color: var(--first-color-alt);
+    box-shadow: 5px 5px 10px #b3b3b3,
+        -5px -5px 10px #ffffff;
 }
-.button__icon{
+
+.button__icon {
     font-size: 1.25rem;
     margin-left: var(--mb-0-5);
     transition: .3s;
 }
-.button--flex{
+
+.button--flex {
     display: inline-flex;
-    align-items: center;  
+    align-items: center;
 }
+
 /*==================== ABOUT ====================*/
-.about__img{
+.about__img {
     width: 200px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
 }
-.about_description{
+
+.about_description {
     text-align: center;
     margin-bottom: var(--mb-2-5);
 }
-.about__info{
+
+.about__info {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2-5);
 }
-.about__info-title{
+
+.about__info-title {
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
 }
-.about__info-name{
+
+.about__info-name {
     font-size: var(--smaller-font-size);
 }
+
 .about__info-title,
-.about__info-name{
+.about__info-name {
     display: block;
     text-align: center;
 }
-.about__buttons{
+
+.about__buttons {
     display: flex;
     justify-content: center;
 }
-/*==================== SKILLS ====================*/
 
+/*==================== SKILLS ====================*/
+.skills__container {
+    row-gap: 0;
+}
+
+.skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills__icon {
+    margin-right: var(--mb-0-75);
+}
+
+.skills__title {
+    font-size: var(--h3-font-size);
+}
+
+.skills__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills__arrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills_list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+}
+
+.skills_bar,
+.skills__parcentage {
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills_bar {
+    background-color: var(--first-color-lighter);
+}
+
+.skills__parcentage {
+    display: block;
+    background-color: var(--first-color);
+}
+
+.skills__html {
+    width: 70%;
+}
+
+.skills__css {
+    width: 40%;
+}
+
+.skills__js {
+    width: 40%;
+}
+
+.skills__bs {
+    width: 90%;
+}
+
+.skills__wp {
+    width: 70%;
+}
+
+.skills__php {
+    width: 20%;
+}
+
+.skills__node {
+    width: 30%;
+}
+
+.skills__sql {
+    width: 60%;
+}
+.skills__ccpp {
+    width: 65%;
+}
+.skills__git {
+    width: 50%;
+}
+.skills__github {
+    width: 90%;
+}
+.skills__linux {
+    width: 60%;
+}
+.skills__canva {
+    width: 95%;
+}
+.skills__close .skills_list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills_list{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+}
+.skills__open .skills__arrow{
+    transform: rotate(-180deg);
+}
 
 /*==================== QUALIFICATION ====================*/
 
