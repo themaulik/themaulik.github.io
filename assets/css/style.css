@@ -267,12 +267,12 @@ img {
 }
 
 .home__blob {
-    width: 200px;
+    width: 250px;
     fill: var(--first-color);
 }
 
 .home__blob-img {
-    width: 160px;
+    width: 135px;
 }
 
 .home__data {
