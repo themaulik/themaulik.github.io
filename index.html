@@ -428,7 +428,7 @@
                         <d iv class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Computer Enginner</h3>
-                                <span class="qualification__subtitle">Government Polutechnic Bhuj College</span>
+                                <span class="qualification__subtitle">Government Polytechnic Bhuj College</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2019 - 2022
@@ -724,32 +724,42 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="" class="contact__form grid" method="POST" data-email="" id="my-form">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" class="contact__input" id="name" name="name">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" class="contact__input" id="email" name="email">
                         </div>
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input">
+                        <label for="project" class="contact__label">Project</label>
+                        <input type="text" class="contact__input" id="project" name="project">
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea name="" id="message" cols="0" rows="7" class="contact__input"
+                            name="message"></textarea>
                     </div>
                     <div>
-                        <a href="#" class="button button--flex">
+                        <!-- <a href="#" class="button button--flex">
                             Send message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </a> -->
+                        <button type="submit" class="button button--flex" id="redirect">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
                     </div>
                 </form>
+                <!-- <div>
+                    <div class="contact__content status__title success" id="status">
+                        
+                    </div>
+                </div> -->
             </div>
         </section>
     </main>
