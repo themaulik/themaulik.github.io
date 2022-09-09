@@ -313,6 +313,7 @@ img {
 
 .home__blob-img {
     width: 135px;
+    filter:drop-shadow(0 -1px 4px rgba(0, 0, 0, .40))
 }
 
 .home__data {
